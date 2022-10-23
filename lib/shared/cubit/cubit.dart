@@ -103,9 +103,9 @@ class AppCubit extends Cubit<AppStates>
              DoneTasks.add(element);}
              else ArchiveTasks.add(element);
          });
+           emit(getState());
        });
 
-       emit(getState());
      }
 
   void updateDatabase({
